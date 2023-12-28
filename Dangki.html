@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Đăng kí tài khoản</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS_DKDN.css">
+    <style>
+        .btn-box button{
+            padding: 7.5px 15px;
+            border-radius: 5px;
+            background-color: #20B2AA;
+            color: #ffffff;
+            border: none;
+            outline: none;
+        }
+         .btn-box1:hover{
+        background-color: #009999;
+        color: yellow;
+        }
+        .footer{
+            color: white;
+        }
+        .btn-box12{
+            margin-top: 10px;
+        }
+        .login-form #baoloi{
+            margin: 0px auto;
+            color: red;
+        }
+        .login-form .loi{
+            width: 100%;
+            padding: 6px;
+            border: 1px solid red;
+            background-color: yellow;
+        }
+        #dieukhoan{
+            font-size: 14px;
+        }
+    </style>
+    <script type="text/javascript">
+        function kiemtra(){
+            var loi = "";
+
+            //kiểm tra tên đăng nhập
+            var tenDN = document.getElementById("tenDN");
+            if(tenDN.value == ""){
+                tenDN.className = "loi";
+                loi += "Tên đăng nhập không được bỏ trống<br>";
+            }
+            else if(tenDN.value.length > 30){
+                tenDN.className = "loi";
+                loi += "Tên đăng nhập quá dài<br>";
+            }
+
+            //kiểm tra email
+            var email = document.getElementById("email");
+            if (email.value =="") {
+                email.className = "loi";
+                loi += "Email không được bỏ trống<br>";
+            }
+
+            //kiểm tra mật khẩu
+            var pass = document.getElementById("password");
+            var pass1 = document.getElementById("password1");
+            if(pass.value == ""){
+                pass.className = "loi";
+                loi += "Mật khẩu không được bỏ trống<br>";
+            }
+            else if(pass.value.length < 5){
+                pass.className = "loi";
+                loi += "Mật khẩu phải có ít nhất 8 kí tự<br>";
+            }
+            else{
+
+            }
+            if(pass1.value == ""){
+                pass1.className = "loi";
+                loi += "Bạn chưa nhập lại mật khẩu<br>";
+            }
+            else if(pass.value != pass1.value){
+                pass1.className = "loi";
+                loi += "Mật khẩu bị khác nhau<br>";
+            }
+
+            //kiểm tra xác thực
+            dem = 0;
+            var xacthuc = document.getElementsByName("check");
+            for (var i = 0; i < xacthuc.length; i++) {
+                if(xacthuc[i].checked) dem++;
+            }
+            if (dem == 0) {
+                document.getElementById("xacThuc").className = "loi";
+                loi += "Bạn chưa xác thực<br>";
+            }
+            if(loi != ""){
+                document.getElementById('baoloi').innerHTML = loi;
+                return false;
+            }
+            else{
+                alert("Đăng kí thành công!");
+            }
+        }
+    </script>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+               <img class="image" src="image/logoexel2.png" alt="logo" width="23%">             
+               <hr>
+               <div class="menuNgang">
+                <ul class="menu level1">
+                    <li><a href="Trangchu.html">Trang chủ</a></li>
+                    <li><a href="Gioithieu.html">Giới thiệu</a></li>
+                    <li><a href="Khoahoc.html">Khóa học</a></li>
+                    <li><a href="Tailieu.html">Tài liệu</a></li>
+                    <li><a href="Hoidap.html">Hỏi đáp</a></li>
+                </ul>
+
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+            <div class="login-form">
+                <form action="" method="post">
+                    <h1 align="center">Đăng kí tài khoản</h1>
+                    <div class="input-box">
+                        <input type="text"  id="tenDN" class="form-control" placeholder="Nhập username">
+                    </div>
+                    <div class="input-box">
+                        <input type="email" id="email" class="form-control" placeholder="Nhập email đăng kí">
+                    </div>
+                    <div class="input-box">
+                        <input type="password" id="password" placeholder="Nhập mật khẩu">
+                    </div>
+                    <div class="input-box">
+                        <input type="password" id="password1" placeholder="Nhập lại mật khẩu">
+                    </div>
+                    <div id="dieukhoan">
+                    <input type="checkbox" id="xacThuc" name="check" > Đồng ý với các điều khoản</div>
+                    <div class="btn-box">
+                        <div id="baoloi"></div>
+                        <button class="btn-box1" type="submit" onclick="return kiemtra();">
+                            Đăng kí
+                        </button>
+                    </div>
+                    <br>
+                    <div class="btn-box2">Bạn đã có tài khoản? <a href="Dangnhap.html" >Đăng nhập</a></div>
+                </form>
+            </div>
+            </div>
+        </main>
+        <footer>
+            <div class="container footer">
+            <div>-Lưu ý: Vui lòng đăng nhập tài khoản trước khi sử dụng dịch vụ.</div>
+            <div>-Sản phẩm của sinh viên trường Đại Học Sư Phạm Hà Nội.</div>
+            <div>-Bản quyền thuộc về nhóm 21. </div>
+            <div>-Mọi thắc mắc được giải đáp qua email: <font color="blue"><u><i >hoctotexcel.com.vn</i></u></font></div>
+            </div>
+        </footer>
+    </body>
+</html>

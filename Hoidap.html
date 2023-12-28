@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Các câu hỏi thường gặp khi học excel</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-image: url(image/anhnen1.jpg);
+            background-size: 100%;
+        }
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: arial;
+        }
+        header{
+            min-height: 150px;
+        }
+        main{
+            background-color: #38BABA;
+            min-height: 350px;
+            padding: 7.5px 15px;
+            border-top: 2px solid white;
+            border-radius: 5px;
+        }
+        footer{
+            background-color: #00CDCD;
+            min-height: 70px;
+            padding: 15px;
+        }
+        .container{
+            width: 100%;
+            max-width: 1280px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .dang{
+            min-width: 90px;
+            min-height: 25px;
+            text-align: center;
+            text-decoration: none;
+            float: right;
+            border: 4px solid darkblue;
+            border-radius: 13px;
+            background-color: darkblue;
+            color: white;
+            font-size: 16px;
+            margin-top: 15px;
+            margin-right: 60px;
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+            0 10px 10px rgba(0, 0, 0, 0.22);
+        }
+        .dang:hover{
+            color: orange;
+        }
+        .menuNgang{
+            height: 46px;
+            font-size: 20px;
+            text-align: center;
+        }
+        .menuNgang>ul{
+             margin: 0 20%;
+            height: 60px;
+        }
+        .menuNgang li{
+            list-style: none;
+            width: 100%;
+            font-weight: bold;
+
+        }
+        .menu{
+            display: flex;
+        }
+        .menu a{
+            text-decoration: none;
+            display: block;
+            height: 45px;
+            line-height: 45px;
+            color: darkblue;
+        }
+        .menu a:hover{
+            color: white;
+            background-color: #12CCCC;
+            border-radius: 20px;
+            border-right: 5px groove #12CCCC;
+
+        }
+        .login-form{
+            width: 80%;
+            max-width: 1000px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 15px;
+            border: 2px solid #cccccc;
+            border-radius: 10px;
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+            0 10px 10px rgba(0, 0, 0, 0.22);
+        }
+        h2{
+            margin-top: 5px;
+            color: #009999;
+            margin-bottom: 30px;
+            text-shadow: 5px 2px 4px lightgray;
+        }
+        .hoidap{
+            margin-left: 20px;
+        }
+        .hoidap ol li{
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .hoidap ol div ul li{
+            font-size: 15px;
+            font-weight: normal;
+            margin-left: 50px;
+        }
+        .required{
+            background-color: #E9F0F0;
+            min-width: 350px;
+            min-height: 150px;
+            border-radius: 5px;
+        }
+        form #submit{
+            margin-left: 50px;
+            color: white;
+            background-color: darkblue;
+            border-radius: 5px;
+        }
+        form #reset{
+            margin-left: 140px;
+             color: white;
+            background-color: darkblue;
+            border-radius: 5px;
+        }
+        .cauhoi{
+            margin-left: 50px;
+        }
+        #submit:hover{
+            color: orange;
+        }
+        #reset:hover{
+            color: orange;
+        }
+        .required:hover{
+            background-color: #F5F5F5;
+        }
+        .footer{
+            color: white;
+        } 
+         .fixed{
+            width: 100%;
+            background-image: url(image/anhnen1.jpg);
+            background-size: 100%;
+            position: fixed;
+        }
+        .image{
+            margin-left: 30px;
+        }  
+        .hoid a{
+            color: white;
+            background-color: #12CCCC;
+            border-radius: 20px;
+            border: 1px solid #39B3B3;
+        }    
+    </style>
+    </head>
+    <body>
+        <header>
+            <div class="container fixed">
+               <img class="image" src="image/logoexel2.png" alt="logo" width="23%" id="logo">
+               <a href="Dangnhap.html"><div class="dang">Đăng nhập</div></a> 
+               <a href="Dangki.html"><div class="dang">Đăng kí</div></a>           
+               <hr>
+               <div class="menuNgang">
+                <ul class="menu level1">
+                    <li><a href="Trangchu.html">Trang chủ</a></li>
+                    <li><a href="Gioithieu.html">Giới thiệu</a></li>
+                    <li><a href="Khoahoc.html">Khóa học</a></li>
+                    <li><a href="Tailieu.html">Tài liệu</a></li>
+                    <li class="hoid"><a href="Hoidap.html">Hỏi đáp</a></li>
+                </ul>
+
+                </div>
+            </div>
+        </header>
+        <br>
+        <main>
+            <div class="container">
+            <div class="login-form">
+                <form action="" method="post">
+                    <h2 align="center">Các câu hỏi thường gặp!</h2><hr><br>
+                    <div class="hoidap">
+                    <ol>
+                        <li>Microsoft Excel là gì?
+                        </li>
+                        <div>- Microsoft Excel là một ứng dụng trang tính điện tử cho phép người dùng lưu trữ, sắp xếp, tính toán và thao tác dữ liệu bằng các công thức sử dụng hệ thống bảng tính chia theo hàng và cột. Nó cũng cung cấp tính linh hoạt để sử dụng các cơ sở dữ liệu bên ngoài để phân tích, làm báo cáo, v.v. nhằm tiết kiệm rất nhiều thời gian.</div>
+                        <br>
+                        <li>Ribbon (dải băng) là gì?
+                        </li>
+                         <div>- Ribbon dùng để chỉ khu vực trên cùng của ứng dụng bao gồm menu và các thanh công cụ có sẵn trong Ms-Excel. Ribbon có thể được ẩn/hiện bằng cách nhấn Ctrl+F1. Ribbon chạy trên cùng của ứng dụng và thay thế cho thanh công cụ và các menu. Ribbon có rất nhiều tab ở trên cùng, mỗi tab có các nhóm lệnh của riêng nó. </div>
+                        <br>
+                        <li>Có bao nhiêu định dạng dữ liệu trong Excel? Kể tên một số chúng.                            
+                        </li>
+                        <div>- Có 11 kiểu định dạng dữ liệu trong Microsoft Excel. Ví dụ:
+                            <ul>
+                                <li>Số - lưu trữ dữ liệu dưới dạng một số</li>
+                                <li>Tiền tệ – lưu trữ dữ liệu dưới dạng tiền tệ</li>
+                                <li>Ngày tháng – Dữ liệu được lưu trữ dưới dạng ngày tháng</li>
+                                <li>Phần trăm – Lưu trữ các số liệu dưới dạng phần trăm</li>
+                                <li>Dạng chữ – Lưu trữ dữ liệu dưới dạng các xâu chữ</li>
+                            </ul></div>
+                        <br>
+                        <li>Thứ tự các thao tác được sử dụng khi lập công thức trong Excel  
+                        </li>
+                        <div>- Thứ tự các thao tác trong Microsoft Excel tương tự trong toán học tiêu chuẩn. Nó được định nghĩa bằng cụm “PEMDAS” hoặc “BEMDAS”<ul>
+                                <li>Parentheses or Brackets (Dấu ngoặc đơn hoặc dấu ngoặc vuông)</li>
+                                <li>Exponent (Lũy thừa)</li>
+                                <li>Multiplication (Phép nhân)</li>
+                                <li>Division (Phép chia)</li>
+                                <li>Addition (Phép cộng)</li>
+                                <li>Subtraction (Phép trừ)</li>
+                            </ul></div>            
+                        <br>
+                        <li>Làm thế nào để bọc văn bản trong một ô?
+                        </li>
+                        <div>- Bạn phải chọn phần chữCó thể ngăn chặn ai đó sao chép dữ liệu các ô trong trang tính của bạn không? bạn muốn bọc, sau đó click “wrap text” ở tab Home và bạn có thể bọc chữ trong một ô</div>
+                        <br>
+                        <li>Có thể ngăn chặn ai đó sao chép dữ liệu các ô trong trang tính của bạn không?
+                        </li>
+                        <div>- Có, hoàn toàn có thể. Để bảo vệ trang tính của bạn khỏi bị sao chép, bạn cần vào Menu >Review > Protect Sheet > Password. Sau khi nhập mật khẩu, bạn có thể bảo vệ trang tính không bị người khác sao chép.</div>
+                        <br>
+                        <li>Làm thế nào để cộng dữ liệu ở các hàng và cột nhanh chóng trong trang tính Excel?
+                        </li>
+                        <div>- Bằng cách sử dụng hàm SUM, bạn có thể tính tổng của các hàng và các cột trong một trang tính Excel.</div>
+                        <br>
+                        <li>Làm thế nào để thêm một trang tính mới?
+                        </li>
+                         <div>- Để thêm một trang tính Excel mới, bạn nên chèn tab trang tính ở dưới màn hình.</div>
+                        <br>
+                        <li>Làm thế nào để thay đổi kích thước cột? 
+                        </li>
+                        <div>- Để thay đổi kích thước cột, bạn nên đổi độ rộng của một cột rồi kéo rìa bên phải của cột đến độ rộng mà bạn muốn. Cách khác để làm điều này là chọn phần Format từ tab Home, và trong Format bạn chọn AUTOFIT COLUMN WIDTH dưới phần ô. Khi click mục này, kích thước ô sẽ được định dạng lại.</div>
+                        <br>
+                        <li>Sự khác nhau giữa COUNT, COUNTA, COUNIF và COUNTBLANK trong Ms-Excel
+                        </li>
+                        <div>- COUNT được sử dụng để đếm các ô có chứa số, ngày tháng, v..v bất kì giá trị được lưu trữ dạng số ngoại trừ ô trống.</div>
+                        <div>- COUNTA hay Count All được sử dụng để đếm các ô chứa số, chữ, giá trị logic, v.v bất kì dạng giá trị nào ngoại trừ ô trống.</div>
+                        <div>- COUNTBLANK đếm các ô trống hoặc ô có xâu trống.</div>
+                    </ol>
+                    </div><br><hr><br>
+                    <div class="cauhoi">Dưới đây là những câu hỏi mình sưu tầm được, nếu bạn có gì thắc mắc vui lòng để lại câu hỏi dưới đây:<br><br>
+                    <h4>Câu hỏi & Thắc mắc</h4>
+                    <form method="post" name="contact" action="Binhluan.html">
+                        <textarea id="text" name="text" rows="0" cols="0" class="required" placeholder="Bình luận"></textarea>
+                        <div class="cleaner_h10"></div> 
+                            <input type="submit" value="Phản hồi" id="submit" name="submit"/>
+                            <input type="reset" value="Quay lại" id="reset" name="reset"/>
+                    </form></div>
+                </form>
+            </div>
+            </div>
+        </main>
+        <footer>
+            <div class="container footer">
+            <div>-Lưu ý: Vui lòng đăng nhập tài khoản trước khi sử dụng dịch vụ.</div>
+            <div>-Sản phẩm của sinh viên trường Đại Học Sư Phạm Hà Nội.</div>
+            <div>-Bản quyền thuộc về nhóm 21. </div>
+            <div>-Mọi thắc mắc được giải đáp qua email: <font color="blue"><u><i >hoctotexcel.com.vn</i></u></font></div>
+            </div>
+        </footer>
+    </body>
+</html>

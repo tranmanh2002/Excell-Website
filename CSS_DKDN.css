@@ -1,0 +1,92 @@
+body{
+    background-image: url(image/anhnen1.jpg);
+    background-size: 100%;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: arial;
+}
+header{
+    /*background-color: #cccccc;*/
+    min-height: 70px;
+    padding: 15px;
+}
+main{
+    /*background-color: #dddddd;*/
+    min-height: 350px;
+    padding: 7.5px 15px;
+}
+footer{
+    background-color: #00CDCD;
+    min-height: 70px;
+    padding: 15px;
+}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.menuNgang{
+    /*background-color: #cccccc;*/
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+.menuNgang>ul{
+     margin: 0 20%;
+    height: 60px;
+}
+.menuNgang li{
+    list-style: none;
+    width: 100%;
+    font-weight: bold;
+}
+.menu{
+    display: flex;
+}
+.menu a{
+    text-decoration: none;
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    color: darkblue;
+}
+.menu a:hover{
+    color: white;
+    background-color: #12CCCC;
+    border-radius: 20px;
+    border-right: 5px groove #12CCCC;
+
+}
+.login-form{
+    width: 80%;
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 15px;
+    border: 2px solid #cccccc;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+}
+h1{
+    color: #009999;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.input-box{
+    margin-bottom: 10px;
+}
+.input-box input{
+    padding: 7.5px 15px;
+    width: 100%;
+    border: 1px solid #cccccc;
+    outline: none;
+}
+ .btn-box{
+    text-align: right;
+    margin-top: 15px;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Đăng nhập vào website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS_DKDN.css">
+    <style>
+        .btn-box2{
+            text-align: left;
+        }
+        .btn-box button{
+            padding: 7.5px 15px;
+            border-radius: 5px;
+            background-color: #20B2AA;
+            color: #ffffff;
+            border: none;
+            outline: none;
+        }
+        .btn-box1{
+            margin-top: 10px;
+         }
+         .btn-box2:hover{
+        background-color: #009999;
+        color: yellow;
+        }
+        .footer{
+            margin-top: 18px;
+            color: white;
+        }
+    </style>
+    <script>
+    function auth(event) {
+        event.preventDefault();
+
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        if (username === "taikhoanboss" && password === "12345") {
+            alert("Đăng nhập thành công!");
+            window.location.replace("Trangchu.html");
+        } else {
+            alert("Đăng nhập thất bại!");
+        }
+    }
+ </script>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+               <img class="image" src="image/logoexel2.png" alt="logo" width="23%">
+               <hr>
+               <div class="menuNgang">
+                <ul class="menu level1">
+                    <li><a href="Trangchu.html">Trang chủ</a></li>
+                    <li><a href="Gioithieu.html">Giới thiệu</a></li>
+                    <li><a href="Khoahoc.html">Khóa học</a>
+                    </li>
+                    <li><a href="Tailieu.html">Tài liệu</a></li>
+                    <li><a href="Hoidap.html">Hỏi đáp</a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <div class="container n1">
+            <div class="login-form">
+                <form action="Trangchu.html" method="post" id="form-login" name="myform">
+                    <h1 align="center">Đăng nhập tài khoản</h1>
+                    <div class="input-box">
+                        <input type="text" id="username" name="name" placeholder="Nhập username">
+                    </div>
+                    <div class="input-box">
+                        <input type="password" id="password" name="pass" placeholder="Nhập mật khẩu">
+                    </div>
+                    <input type="checkbox" value="Ghi nhớ mật khẩu"> Ghi nhớ mật khẩu
+                    <div class="btn-box">
+                        <button class="btn-box2" type="submit" onClick="auth(event);">
+                            Đăng nhập
+                        </button>
+                    </div>
+                    <br>
+                    <div class="btn-box1">Bạn chưa có tài khoản? <a href="Dangki.html" >Đăng kí</a></div>
+                </form>
+            </div>
+            </div>
+        </main>
+        <footer>
+            <div class="container footer">
+            <div>-Lưu ý: Vui lòng đăng nhập tài khoản trước khi sử dụng dịch vụ.</div>
+            <div>-Sản phẩm của sinh viên trường Đại Học Sư Phạm Hà Nội.</div>
+            <div>-Bản quyền thuộc về nhóm 21. </div>
+            <div>-Mọi thắc mắc được giải đáp qua email: <font color="blue"><u><i >hoctotexcel.com.vn</i></u></font></div>
+            </div>
+        </footer>
+    </body>
+</html>

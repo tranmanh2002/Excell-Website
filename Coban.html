@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Khóa học cơ bản</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-image: url(image/anhnen1.jpg);
+            background-size: 100%;
+        }
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: arial;
+        }
+        header{
+            min-height: 70px;
+            padding: 15px;
+        }
+        main{
+            display: flex;
+            min-height: 350px;
+        }
+        footer{
+            background-color: darkblue;
+            min-height: 70px;
+            padding: 15px;
+        }
+        .container{
+            width: 100%;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .dang{
+            min-width: 90px;
+            min-height: 25px;
+            text-align: center;
+            /*text-decoration: none;*/
+            float: right;
+            border: 4px solid darkblue;
+            border-radius: 13px;
+            background-color: darkblue;
+            color: white;
+            font-size: 16px;
+            margin-top: 15px;
+            margin-right: 60px;
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+            0 10px 10px rgba(0, 0, 0, 0.22);
+        }
+        .dang:hover{
+            color: orange;
+        }
+        .menuNgang{
+            height: 30px;
+            font-size: 20px;
+            text-align: center;
+        }
+        .menuNgang>ul{
+            margin: 0 20%;
+            min-height: 60px;
+        }
+        .menuNgang li{
+            list-style: none;
+            width: 100%;
+            font-weight: bold;
+        }
+        .menu{
+            display: flex;
+        }
+        .menu a{
+            text-decoration: none;
+            display: block;
+            height: 45px;
+            line-height: 45px;
+            color: darkblue;
+        }
+        .menu a:hover{
+            color: white;
+            background-color: #12CCCC;
+            border-radius: 20px;
+            border-right: 5px groove #12CCCC;
+
+        }
+        .menu1 a{
+            text-decoration: none;
+            display: block;
+            height: 45px;
+            line-height: 45px;
+            color: darkblue;
+        }
+        .menu1 a:hover{
+            color: white;
+            background-color: #59E3E3;
+            border-radius: 20px;
+            border-right: 5px groove #12CCCC;
+
+        }
+        
+        .menu-doc>li a{
+            background-color: #59E3E3;
+            border-radius: 20px;
+            border-top: 1px groove lightgrey;
+            font-size: 18px;
+        }
+        .level1 ul{
+            display: none;
+        }
+        .level1 li:hover ul{
+            display: block;
+        }
+        .level1 li:hover{
+            background-color: #12CCCC;
+            border-radius: 20px;
+            height: 45px;
+        }
+        main .nav{
+            padding: 10px; 
+            text-align: center; 
+            display: flex;
+            width: 15%;
+            margin-left: 30px; 
+        }
+        main .content{
+            background-color: #F0FFFF;
+            width: 85%;
+            border-radius: 5px;
+            margin-right: 30px;
+        }
+        .nav li{
+            position: relative;
+        }
+        .nav li>ul{
+            position: absolute;
+            top: 0px;
+            left: 100%;
+            width:100%;
+        }
+        .nav .menu1>li{
+            width: 100%;
+            min-width: 179px;
+            min-height: 30px;
+            background-color: #59E3E3;
+            border-radius: 20px;
+            border-top: 1px solid gray;
+        }
+        li ul{
+            list-style: none;
+        }
+        .level2 ul a{
+            display: none;
+        }
+        .level2 li:hover ul a{
+            display: block;
+        }
+        #cb{
+            width: 100%;
+            height: 500px;
+        }
+        .footer{
+            color: white;
+        }
+    </style>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+               <img src="image/logoexel2.png" alt="logo" width="23%">
+               <a href="Dangnhap.html"><div class="dang">Đăng nhập</div></a>
+               <a href="Dangki.html"><div class="dang">Đăng kí</div></a>
+               <hr>
+               <div class="menuNgang">
+                <ul class="menu level1">
+                    <li><a href="Trangchu.html">Trang chủ</a></li>
+                    <li><a href="Gioithieu.html">Giới thiệu</a></li>
+                    <li><a href="Tailieu.html">Tài liệu</a></li>
+                    <li><a href="Hoidap.html">Hỏi đáp</a></li>
+                </ul>
+                </div>
+            </div>
+        </header>
+        <br>
+        <main>
+            <div class="container nav">
+                    <ul class="menu1 level1">
+                        <li><a href="Coban.html">Khóa học cơ bản</a>
+                            <ul class="menu-doc level2">
+                                <li><a>Chương 1</a>
+                                    <ul class="menu-doc level3">
+                                        <li><a href="tailieu/Cobanbai1.html" target="ndung">Bài 1</a></li>
+                                        
+                                    </ul>
+                                </li>
+                                <li><a >Chương 2</a>
+                                    <ul class="menu-doc level3">
+                                        <li><a href="tailieu/Cobanbai2.html" target="ndung">Bài 2</a></li>
+                                        <li><a href="tailieu/Cobanbai3.html" target="ndung">Bài 3</a></li>
+                                        <li><a href="tailieu/Cobanbai4.html" target="ndung">Bài 4</a></li>
+                                    </ul>
+                                </li>
+                                <li><a>Chương 3</a>
+                                    <ul class="menu-doc level3">
+                                        <li><a href="tailieu/Cobanbai5.html" target="ndung">Bài 5</a></li>
+                                    </ul>
+                                </li>
+                                <li><a>Chương 4</a>
+                                    <ul class="menu-doc level3">
+                                        <li><a href="tailieu/Cobanbai6.html" target="ndung">Bài 6</a></li>
+                                        <li><a href="tailieu/Cobanbai7.html" target="ndung">Bài 7</a></li>
+                                    </ul>
+                            </ul>
+                        </li>
+                        <br>
+                        <li><a href="Nangcao.html">Khóa học nâng cao</a>
+                        <ul class="menu-doc level2">
+                                <li><a>Chương 1</a>
+                                    <ul class="menu-doc level3">
+                                        <li><a href="tailieu/Nangcaobai1.html" target="ndung">Bài 1</a></li>
+                                        <li><a href="tailieu/Nangcaobai2.html" target="ndung">Bài 2</a></li>
+                                    </ul>
+                                </li>
+                                <li><a>Chương 2</a>
+                                    <ul class="menu-doc level3">
+                                        <li><a href="tailieu/Nangcaobai3.html" target="ndung">Bài 3</a></li>
+                                        <li><a href="tailieu/Nangcaobai4.html" target="ndung">Bài 4</a></li>
+                                    </ul>
+                                </li>
+                                <li><a>Chương 3</a>
+                                    <ul class="menu-doc level3">
+                                        <li><a href="tailieu/Nangcaobai5.html" target="ndung">Bài 5</a></li>
+                                        <li><a href="tailieu/Nangcaobai6.html" target="ndung">Bài 6</a></li>
+                                    </ul>
+                                </li>
+                                <li><a>Chương 4</a>
+                                    <ul class="menu-doc level3">
+                                        <li><a href="tailieu/Nangcaobai7.html" target="ndung">Bài 7</a></li>
+                                        <li><a href="tailieu/Nangcaobai8.html" target="ndung">Bài 8</a></li>
+                                    </ul>
+                                </li>
+                                <li><a>Chương 5</a>
+                                    <ul class="menu-doc level3">
+                                        <li><a href="tailieu/Nangcaobai9.html" target="ndung">Bài 9</a></li>
+                                        <li><a href="tailieu/Nangcaobai10.html" target="ndung">Bài 10</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+            </div>
+            <div class="container content">
+                <iframe name="ndung" id="cb">
+                </iframe>
+            </div>
+        </main>
+        <footer>
+            <div class="container footer">
+            <div>-Lưu ý: Vui lòng đăng nhập tài khoản trước khi sử dụng dịch vụ.</div>
+            <div>-Sản phẩm của sinh viên trường Đại Học Sư Phạm Hà Nội.</div>
+            <div>-Bản quyền thuộc về nhóm 21. </div>
+            <div>-Mọi thắc mắc được giải đáp qua email: <font color="blue"><u><i >hoctotexcel.com.vn</i></u></font></div>
+            </div>
+        </footer>
+    </body>
+</html>

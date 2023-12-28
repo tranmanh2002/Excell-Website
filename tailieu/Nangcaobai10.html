@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style>
+	*{
+		margin-left: 10px;
+	}
+</style>
+<body>
+	<h2 align="center">Bài 10: Cách sử dụng Data Validation trong Excel</h2>
+	<ol>
+		<li>Chọn ô bạn muốn tạo quy tắc.</li>
+		<br><li>Chọn Data >Data Validation.</li>
+		<br><li>Trên tab Settings, trong Allow, tích một tùy chọn:</li>
+			<ul>
+				<li>Whole Number - Hạn chế ô chỉ chấp nhận các giá trị số nguyên.</li>
+				<li>Decimal - Hạn chế ô chỉ chấp nhận số thập phân.</li>
+				<li>List - Chọn dữ liệu từ danh sách thả xuống.</li>
+				<li>Date - Hạn chế ô chỉ chấp nhận giá trị ngày.</li>
+				<li>Time - Hạn chế ô chỉ chấp nhận giá trị thời gian.</li>
+				<li>Text Length - Hạn chế độ dài văn bản.</li>
+				<li>Custom – Tùy biến công thức.</li>
+			</ul>
+		<br><li>Trong Data, chọn một điều kiện:</li>
+			<ul>
+				<li>between - Ở giữa</li>
+				<li>not between - Không phải ở giữa</li>
+				<li>equal to - Bằng</li>
+				<li>not equal to - Không bằng</li>
+				<li>greater than - Lớn hơn</li>
+				<li>less than - Ít hơn</li>
+				<li>greater than or equal to - Lớn hơn hoặc bằng</li>
+				<li>less than or equal to - Ít hơn hoặc bằng</li>
+			</ul>
+		<br><li>Trên tab Settings, trong Allow, chọn một trong số các option có sẵn.</li>
+		<br><li>Đặt các giá trị được yêu cầu khác, dựa trên những gì bạn chọn cho Allow và Data. Ví dụ, nếu chọn between, sau đó chọn các giá trị Minimum: và Maximum: cho các ô đó.</li>
+		<br><li>Tích ô Ignore blank nếu muốn bỏ qua các khoảng cách trống.</li>
+		<br><li>Nếu muốn thêm tiêu đề - Title và thông báo cho quy tắc của bạn, chọn tab Input Message, rồi gõ tiêu đề và thông báo mong muốn.</li>
+		<br><li>Tích Show input message when cell is selected để hiện thông báo khi người dùng chọn hoặc trỏ chuột qua các ô lựa chọn.</li>
+		<br><li>Chọn OK.</li>
+		<p>Giờ, nếu người dùng nhập giá trị không hợp lệ, một pop-up sẽ hiện ra kèm thông báo “This value doesn’t match the data validation restrictions for this cell.”</p>
+	</ol>
+</body>
+</html>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Tài liệu</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-image: url(image/anhnen1.jpg);
+            background-size: 100%;
+        }
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: arial;
+        }
+        header{
+            min-height: 150px;
+        }
+        main{
+            background-color: #38BABA;
+            min-height: 350px;
+            padding: 7.5px 15px;
+            border-top: 2px solid white;
+            border-radius: 5px;
+        }
+        footer{
+            background-color: #00CDCD;
+            min-height: 70px;
+            padding: 15px;
+        }
+        .container{
+            width: 100%;
+            max-width: 1280px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .dang{
+            min-width: 90px;
+            min-height: 25px;
+            text-align: center;
+            text-decoration: none;
+            float: right;
+            border: 4px solid darkblue;
+            border-radius: 13px;
+            background-color: darkblue;
+            color: white;
+            font-size: 16px;
+            margin-top: 25px;
+            margin-right: 60px;
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+            0 10px 10px rgba(0, 0, 0, 0.22);
+        }
+        .dang:hover{
+            color: orange;
+        }
+        .menuNgang{
+        height: 46px;
+        font-size: 20px;
+        text-align: center;
+        }
+        .menuNgang>ul{
+            margin: 0 20%;
+            height: 50px;
+        }
+        /*đặt lại liststyle thành none căn chỉnh kích thước chiều rộng các thẻ li theo tỉ lệ % theo thẻ ul cho chúng tự chia đều nhau*/
+        .menuNgang li{
+            list-style: none;
+            width: 100%;
+            font-weight: bold;
+
+        }
+        /*display flex giúp sắp xếp, bố cục các thành phần khối(block)*/
+        .menu{
+            display: flex;
+        }
+        /*đặt text-decoration thành none làm mất dấu gạch dưới của thẻ a, line-height thiết lập chiều cao giữa các dòng khi cho kích thước line-height = height thì chữ sẽ nằm ở giữa, display block giúp xác định các thành phần hiển thị theo các hàng độc lập*/
+        .menu a{
+            text-decoration: none;
+            height: 45px;
+            display: block;
+            line-height: 45px;
+            color: darkblue;
+        }
+        .menu a:hover{
+            color: white;
+            background-color: #12CCCC;
+            border-radius: 20px;
+            border-right: 5px groove #12CCCC;
+
+        }
+        .login-form{
+            width: 80%;
+            max-width: 1000px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 15px;
+            border: 2px solid #cccccc;
+            border-radius: 10px;
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+            0 10px 10px rgba(0, 0, 0, 0.22);
+            /*position: relative;*/
+        }
+        h1{
+            margin-top: 30px;
+        }
+        h2{
+            text-align: center;
+        }
+        .footer{
+            color: white;
+        }
+        .tailieu{
+            margin-left: 20px;
+        }
+        .tailieu ol li{
+            font-size: 15px;
+            margin-left: 50px;
+        }
+        .tailieu ul li{
+            margin-left: 50px;
+        }
+        .cauhoi{
+            margin-left: 50px;
+        }
+        .required{
+            background-color: #E9F0F0;
+            min-width: 350px;
+            min-height: 150px;
+            border-radius: 5px;
+        }
+        form #submit{
+            margin-left: 50px;
+            color: white;
+            background-color: darkblue;
+            border-radius: 5px;
+        }
+        form #reset{
+            margin-left: 140px;
+             color: white;
+            background-color: darkblue;
+            border-radius: 5px;
+        }
+        #submit:hover{
+            color: orange;
+        }
+        #reset:hover{
+            color: orange;
+        }
+        .required:hover{
+            background-color: #F5F5F5;
+        }
+        .fixed{
+            width: 100%;
+            background-image: url(image/anhnen1.jpg);
+            background-size: 100%;
+            position: fixed;
+        }
+        .image{
+            margin-left: 30px;
+        }
+        .tail a{
+            color: white;
+            background-color: #12CCCC;
+            border-radius: 20px;
+            border: 1px solid #39B3B3;
+        }
+    </style>
+    </head>
+    <body>
+        <header>
+            <div class="container fixed">
+               <img class="image" src="image/logoexel2.png" alt="logo" width="23%" id="logo">
+               <a href="Dangnhap.html"><div class="dang">Đăng nhập</div></a>  
+               <a href="Dangki.html"><div class="dang">Đăng kí</div></a>          
+               <hr>
+               <div class="menuNgang">
+                <ul class="menu level1">
+                    <li><a href="Trangchu.html">Trang chủ</a></li>
+                    <li><a href="Gioithieu.html">Giới thiệu</a></li>
+                    <li><a href="Khoahoc.html">Khóa học</a></li>
+                    <li class="tail"><a href="Tailieu.html">Tài liệu</a></li>
+                    <li><a href="Hoidap.html">Hỏi đáp</a></li>
+                </ul>
+                </div>
+            </div>
+        </header>
+        <br>
+        <main>
+            <div class="container">
+            <div class="login-form">
+                <form action="" method="post">
+                    <h1 align="center">TÀI LIỆU HỌC EXCEL</h1><br>
+                    <h3 align="center">Từ cơ bản đến nâng cao</h3><br>
+                    <div align="right">Nguồn bài: Chuyên mục <font color="blue"><u><i>Kiến thức Văn phòng</i></u></font></div><hr><br>
+                    <div class="tailieu">
+                        <h2 class="bai">Bài 1: Nhập môn Excel</h2><br><br>
+                        <div>Nếu bắt đầu học Microsoft Excel thì đây là những vấn đề cơ bản bạn nên biết. bài viết sẽ cung cấp hướng dẫn nhập môn và sử dụng bảng tính Excel đơn giản nhất.</div><br>
+                        <h4>Tạo workbook trong Excel</h4><br>
+                        <div><b>Microsoft Excel</b> là phần mềm văn phòng phổ biến với khả năng hỗ trợ lập bảng tính và xử lý các con số tuyệt vời. Với Excel, bạn có thể sắp xếp dữ liệu hợp lý bằng AutoFill. Sau đó, nhận đề xuất lập biểu đồ dữ liệu và tạo chúng chỉ bằng một click. Hoặc dễ dàng xác định xu hướng, mô hình bằng thanh dữ liệu, mã màu & icon.</div><br>
+                        <h4>Tạo một workbook</h4>
+                        <ol start="1">
+                            <li>Chọn ô trống, ví dụ A1, rồi gõ text hoặc số.</li>
+                            <li>Chọn <b>Blank workbook</b> hoặc nhấn Ctrl+N</li>
+                        </ol><br>
+                        <h4>Nhập dữ liệu</h4><br>
+                        <div>Để nhập dữ liệu theo cách thủ công:</div><br>
+                        <ol start="1">
+                            <li>Mở <b>Excel.</b></li>
+                            <li>Nhấn Enter hoặc <b>Tab</b> để chuyển sang ô tiếp theo. </li>
+                        </ol>
+                        <div>Để điền dữ liệu theo một seri:</div><br>
+                        <ol start="1">
+                            <li>Nhập dữ liệu bắt đầu seri đó trong hai ô: ví dụ Jan và Feb hoặc 2014 và 2015.</li>
+                            <li>họn hai ô chứa seri đó, rồi kéo thanh lấp đầy sang ngang hoặc xuống các ô phía dưới.</li>
+                        </ol><br>
+                        <h3>Lưu workbook vào OneDrive trong Excel</h3><br>
+                        <h4>Lưu workbook vào OneDrive</h4><br>
+                        <div>Lưu workbook vào OneDrive để truy cập nó từ nhiều thiết bị, chia sẻ và cộng tác với người khác.</div><br>
+                        <ol start="1">
+                            <li>Chọn <b>File > Save As.</b><br>
+                                <ul>
+                                    <li>Nếu dùng cho công việc hoặc học tập, chọn <b>OneDrive - &ltTên công ty&gt.</b></li>
+                                    <li>Đối với file cá nhân, chọn <b>OneDrive -Personal.</b></li><br>
+                                </ul>
+                            </li>
+                            <li>Nhập tên file và chọn <b>Save.</b></li>
+                        </ol><br>
+                            <div><b>Lưu ý:</b> Bạn có thể cần phải đăng nhập tài khoản Microsoft.</div><br>
+                        <h3>Phân tích và định dạng trong Excel</h3><br>
+                        <h4>Tự động điền một cột bằng Flash Fill</h4><br>
+                        <div>Ví dụ, tự động điền cột tên (First Name) từ cột tên đầy đủ (Full Name).</div><br>
+                        <ol start="1">
+                            <li>Trong ô dưới First Name, gõ Molly và nhấn Enter.</li>
+                            <li>Trong ô tiếp theo, gõ một vài chữ cái trong tên Garret.</li>
+                            <li>Khi danh sách các giá trị đề xuất hiện ra, nhấn Return. Chọn Flash Fill Options  để có nhiều lựa chọn hơn.</li>
+                        </ol><br>
+                        <h4>Tạo sơ đồ</h4><br>
+                        <div>Dùng công cụ <b>Quick Analysis</b> để chọn biểu đồ phù hợp cho dữ liệu.</div><br>
+                        <ol start="1">
+                            <li>Chọn dữ liệu muốn hiển thị trong sơ đồ.</li>
+                            <li>Chọn nút <b>Quick Analysis </b>ở bên phải phía dưới các ô lựa chọn.</li>
+                            <li>Chọn <b>Charts</b>, trỏ chuột qua các lựa chọn có sẵn, rồi tích vào sơ đồ mong muốn.</li>
+                        </ol><br><hr><br>
+                        <h2 class="bai">Bài 2: Những thao tác cơ bản trong Excel</h2><br><br>
+                        <h4>Tạo một workbook mới</h4><br>
+                        <div>Workbook (hay sổ làm việc) là tập tin chứa từ một worksheet trở lên, giúp bạn sắp xếp dữ liệu khoa học. Bạn có thể tạo workbook mới từ workbook hay template trống.</div><br>
+                        <h4>Office 2013 trở lên</h4><br>
+                        <div><b>Tạo workbook</b></div>
+                        <ol start="1">
+                            <li>Mở Excel.</li>
+                            <li>Chọn <b>Blank workbook</b> hoặc nhấn Ctrl+N.</li>
+                            <li>Bắt đầu gõ.</li>
+                        </ol><br>
+                        <div><b>Tạo workbook từ template</b></div>
+                        <ol start="1">
+                            <li>Chọn <b>File &gt New.</b></li>
+                            <li>Click đúp vào một template.</li>
+                            <li>Click và bắt đầu gõ.</li>
+                        </ol><br>
+                        <h4>Chèn hoặc xóa một worksheet</h4><br>
+                        <div>Microsoft Excel giúp bạn dễ dàng chèn, đổi tên và xóa worksheet trong workbook.</div><br>
+                        <h4>Office 2013 trở lên</h4><br>
+                        <div><b>Chèn một worksheet</b></div><br>
+                        <ul>
+                            <li>Chọn dấu '<b>+</b>' ở góc dưới màn hình.</li>
+                            <li>Hoặc chọn <b>Home  &gt Insert &gt Insert Sheet.</b></li>
+                        </ul><br>
+                        <div><b>Đổi lại tên một worksheet</b></div><br>
+                         <ul>
+                            <li>Click đúp vào tên bảng tính trong tab <b>Sheet</b> để đổi nhanh lại tên của nó.</li>
+                            <li>Hoặc click đúp vào tab <b>Sheet</b>, click <b>Rename</b> và gõ tên mới.</b></li>
+                        </ul><br>
+                        <div><b>Xóa một worksheet</b></div><br>
+                         <ul>
+                            <li>Click chuột phải vào tab  <b>Sheet</b> và chọn <b>Delete.</b></li>
+                            <li>Hoặc chọn sheet đó, rồi chọn <b>Home &gt Delete &gt Delete Sheet.</b></li>
+                        </ul><br>
+                    </div><br><hr><br>
+                    <div class="cauhoi">Dưới đây là tài liệu mình sưu tầm được, nếu bạn có gì thắc mắc vui lòng để lại câu hỏi dưới đây:<br><br>
+                    <h4>Câu hỏi & Thắc mắc</h4>
+                    <form method="post" name="contact" action="#">
+                        <textarea id="text" name="text" rows="0" cols="0" class="required" placeholder="Bình luận"></textarea>
+                        <div class="cleaner_h10"></div> 
+                            <input type="submit" value="Phản hồi" id="submit" name="submit"/>
+                            <input type="reset" value="Quay lại" id="reset" name="reset"/>
+                    </form></div>
+                </form>
+            </div>
+            </div>
+        </main>
+        <footer>
+            <div class="container footer">
+            <div>-Lưu ý: Vui lòng đăng nhập tài khoản trước khi sử dụng dịch vụ.</div>
+            <div>-Sản phẩm của sinh viên trường Đại Học Sư Phạm Hà Nội.</div>
+            <div>-Bản quyền thuộc về nhóm 21. </div>
+            <div>-Mọi thắc mắc được giải đáp qua email: <font color="blue"><u><i >hoctotexcel.com.vn</i></u></font></div>
+            </div>
+        </footer>
+    </body>
+</html>

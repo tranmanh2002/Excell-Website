@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Đăng nhập vào website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-image: url(image/anhnen1.jpg);
+            background-size: 100%;
+        }
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: arial;
+        }
+        header{
+            min-height: 150px;
+            /*padding: 15px;*/
+        }
+        main{
+            display: flex;
+        }
+        footer{
+            background-color: #00CDCD;
+            min-height: 70px;
+            padding: 15px;
+        }
+        .container{
+            margin-left: 0px;
+            width: 100%;
+            max-width: 1280px;    
+        }
+        .nav{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .dang{
+            min-width: 90px;
+            min-height: 25px;
+            text-align: center;
+            text-decoration: none;
+            float: right;
+            border: 4px solid darkblue;
+            border-radius: 13px;
+            background-color: darkblue;
+            color: white;
+            font-size: 16px;
+            margin-top: 25px;
+            margin-right: 60px;
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+            0 10px 10px rgba(0, 0, 0, 0.22);
+        }
+        .dang:hover{
+            color: orange;
+        }
+        .menuNgang{
+            height: 46px;
+            font-size: 20px;
+            text-align: center;
+        }
+        .menuNgang>ul{
+            margin: 0 20%;
+            min-height: 60px;
+        }
+        .menuNgang li{
+            list-style: none;
+            width: 100%;
+            font-weight: bold;
+        }
+        .menu{
+            display: flex;
+        }
+        .menu a{
+            text-decoration: none;
+            display: block;
+            height: 45px;
+            line-height: 45px;
+            color: darkblue;
+        }
+        .menu a:hover{
+            color: white;
+            background-color: #12CCCC;
+            border-radius: 20px;
+            border-right: 5px groove #12CCCC;
+        }
+        .menu-doc>li{
+            background-color: #12CCCC;
+            border-radius: 20px;
+            border-top: 1px groove lightgrey;
+            font-size: 18px;
+        }
+        .level1 ul{
+            display: none;
+        }
+        .level1 li:hover ul{
+            display: block;
+        }
+        .level1 li:hover{
+            background-color: #12CCCC;
+            border-radius: 20px;
+            height: 45px;
+        }
+        .level2{
+            position: relative;
+            z-index: 100;
+        } 
+        main .nav{
+            text-align: center;  
+        }
+        .footer{
+            color: white;
+        }
+        .fixed{
+            width: 100%;
+            background-image: url(image/anhnen1.jpg);
+            background-size: 100%;
+            position: fixed;
+        }
+        .image{
+            margin-left: 30px;
+        }
+        .trangchu a{
+            color: white;
+            background-color: #12CCCC;
+            border-radius: 20px;
+            border: 1px solid #39B3B3;
+        }
+    </style>
+    </head>
+    <body>
+        <header>
+            <div class="container fixed">
+               <img class="image" src="image/logoexel2.png" alt="logo" width="23%">
+               <a href="Dangnhap.html"><div class="dang">Đăng nhập</div></a>
+               <a href="Dangki.html"><div class="dang">Đăng kí</div></a>
+               <hr>
+               <div class="menuNgang">
+                <ul class="menu level1">
+                    <li class="trangchu"><a href="Trangchu.html">Trang chủ</a></li>
+                    <li><a href="Gioithieu.html">Giới thiệu</a></li>
+                    <li><a href="Khoahoc.html">Khóa học</a>
+                    </li>
+                    <li><a href="Tailieu.html">Tài liệu</a></li>
+                    <li><a href="Hoidap.html">Hỏi đáp</a></li>
+                </ul>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container nav"><br>
+                <img src="image/hinhanhexcel3.jpg" alt="" width="95%" height="80%">
+            </div>
+        </main>
+        <footer>
+            <div class="container footer">
+             <div>-Lưu ý: Vui lòng đăng nhập tài khoản trước khi sử dụng dịch vụ.</div>
+            <div>-Sản phẩm của sinh viên trường Đại Học Sư Phạm Hà Nội.</div>
+            <div>-Bản quyền thuộc về nhóm 21. </div>
+            <div>-Mọi thắc mắc được giải đáp qua email: <font color="blue"><u><i >hoctotexcel.com.vn</i></u></font></div>
+            </div>
+        </footer>
+        
+    </body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Bài 1 Chương 2 Cơ bản</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        
+        .bai1{
+            margin-left: 50px;
+        }
+        .bold{
+            font-weight: bold;
+        }
+        .bai1 h4{
+            margin-top: 20px;
+        }
+    </style>
+    </head>
+    <body>
+        
+    <div class="bai1">
+        <h4 align="center"> CHƯƠNG II</h4>
+        <h4 align="center">LÀM VIỆC VỚI MÁY TÍNH</h4><hr><br>
+        <h4 align="center">BÀI 4:</h4><br>
+        <ol type="I">
+            <li class="bold">KHỐI, PHẠM VI THAO TÁC</li><br>
+                <ol start="1">
+                     <li><b>Khái niệm khối (còn gọi là vùng bảng tính)</b>: Khối gồm 1 ô hoặc nhiều ô liên tục Khối được xác định bằng địa chỉ: &lt địa chỉ ô đầu tiên&gt:&ltđịa chỉ ô cuối cùng&gt</li>
+                     <div><u>VD</u>: Khối dữ liệu A2:C5 gồm tất cả những ô từ ô A2 đến ô C5</div><br>
+                     <div class="bold">Cách chọn khối:</div>
+                     <div>- Chọn 1 ô: muốn làm việc với ô nào thì kích chuột tại ô đó</div>
+                     <div>- Chọn 1 dòng: Kích chuột vào tiêu đề dòng đó</div>
+                     <div>- Chọn 1 cột: kích chuột vào tiêu đề cột đó</div>
+                     <div>Ngoài ra có thể dùng phím Shift + các phím mũi tên để chọn khối</div><br>
+                     <li class="bold">Khái niệm phạm vi:</li>
+                     <div>Gồm 1 khối hoặc nhiều khối</div>
+                     <div class="bold">Cách chọn phạm vi gồm nhiều khối:</div>
+                     <div>Dùng chuột quét chọn khối đầu tiên, ấn phím Ctrl, rồi quét chọn tiếp các khối khác.</div>
+                </ol>
+            <br>
+            <li class="bold">LÀM VIỆC VỚI DỮ LIỆU KIỂU CÔNG THỨC</li><br>
+                <ol start="1">
+                    <li class="bold">Các toán tử dùng trong công thức</li><br>
+                    <div>- Toán tử số học: + (cộng), - (trừ), * (nhân), / (chia), ^ (luỹ thừa)</div>
+                    <div>- Toán tử liên kết chuỗi: & (ghép nối 2 chuỗi)</div>
+                    <div>- Toán tử so sánh: chỉ cho kết quả là một trong hai giá trị TRUE hoặc FALSE</div>
+                    <div>- Độ ưu tiên của toán tử: theo thứ tự giảm dần: ( ), ^, */, + - ...</div><br>
+                    <li class="bold">Các loại địa chỉ ô/khối:</li><br>
+                    <div class="bold">- Địa chỉ tương đối:</div>
+                    <div>Ký hiệu: &ltcột&gt&ltdòng&gt </div>
+                    <div><u>VD: </u></div>
+                    <img src="../image/dongcot.png" alt="Bảng">
+                    <div>Giả sử công thức tại ô C1 như sau: = A1 * B1, kết quả là 30</div>
+                    <div>Khi sao chép công thức của ô C1 đến ô C2 thì công thức tại ô này như sau: = A2 * B2, kết quả là 80</div>
+                    <div>Khi sao chép công thức của ô C1 đến ô D1 thì công thức tại ô này như sau: =B2 * C2, kết quả là 90</div>
+                    <div>Khi sao chép công thức của ô C1 đến ô D2 thì công thức tại ô này như sau: =B2 * C2, kết quả là 320</div>
+                    <div>Như vậy khi sao chép công thức của ô C1 đến các ô khác thì ô A1 và B1 thay đổi theo hàng và cột tương ứng. Vậy ô A1, B1 trong công thức là loại địa chỉ tương đối.</div><br>
+                    <div class="bold">- Địa chỉ tuyệt đối:</div><br>
+                    <div>Ký hiệu: $&ltcột&gt$&ltdòng&gt</div>
+                    <div><u>VD</u>: Yêu cầu tính các cột Chi phí 1 và Chi phí 2 trong bảng số liệu sau, biết rằng:</div>
+                    <div>Chi phí 1 = Số lượng 1 * Đơn giá 1 * Tỷ lệ chi phí</div>
+                    <div>Chi phí 2 = Số lượng 2 * Đơn giá 2 * Tỷ lệ chi phí</div>
+                    <img src="../image/tuyetdoi.png" alt="Bảng" width="70%">
+                    <div>Ta có công thức tại ô E3 là: = A3 * C3 *$B$1</div>
+                    <div>Khi sao chép công thức từ ô E3 sang các ô E4, E5, F3, F4, F5 thì công thức sẽ thay đổi như sau:</div>
+                    <div>E4 = A4 * C4 *$B$1</div>
+                    <div>E5 = A5 * C5 *$B$1</div>
+                    <div>F3 = B3 * D3 *$B$1</div>
+                    <div>F4 = B4 * D4 *$B$1</div>
+                    <div>F5 = B5 * D5 *$B$1</div>
+                    <div>Vậy trong công thức, địa chỉ $B$1 là loại địa chỉ tuyệt đối.</div><br>
+                    <li class="bold">Cách tạo công thức: </li><br>
+                    <div>Chọn một trong các cách:</div>
+                    <div><u>Cách 1</u>: Nhập trực tiếp từ bàn phím</div>
+                    <div><u>Cách 2</u>: Nhập bằng bàn phím các giá trị là hằng số, toán tử. Kích chuột vào các ô, khối mà công thức tham chiếu và dùng phím F4 để chọn loại địa chỉ (con trỏ đang đứng sau địa chỉ nào thì phím F4 sẽ tác dụng lên địa chỉ đó)</div><br>
+                    <div><u>VD</u>: Muốn tạo công thức tại ô C2 = $B3 - C$1 ta làm như sau:</div>
+                    <div>- Đưa con trỏ đến ô C2</div>
+                    <div>- Gõ dấu "="</div>
+                    <div>- Kích chuột vào ô B3, sau đó ấn phím F4 cho đến khi được $B3</div>
+                    <div>- Gõ dấu "-"</div>
+                    <div>- Kích chuột vào ô C1, sau đó ấn F4 cho đến khi được C$1</div>
+                    <div>- Nhấn Enter.</div><br>
+                </ol>
+            <li class="bold">ĐỊNH DẠNG DỮ LIỆU</li> <br>
+                
+                <div>Dữ liệu mới nhập vào sẽ ở dạng thô, dạng nguyên thuỷ. Muốn dữ liệu trình bày theo dạng thức phù hợp, cần phải tiến hành định dạng</div>
+                <div>- Chọn phạm vi dữ liệu cần định dạng</div>
+                <div>- Chọn lệnh Format - Cells -&gt Xuất hiện hộp thoại:</div><br>
+                <div>+ Phiếu Number: Định dạng số</div>
+                <img src="../image/fomats.png" alt="Bảng" width="50%">
+                <div>Category: Gồm các dạng thức thể hiện: số, ngày, tiền tệ...</div>
+                <div>+ Phiếu Alignment: Bố trí dữ liệu trong ô</div>
+                <div>+ Phiếu Pattern: Tô nền cho phạm vi</div>
+                <div>+ Phiếu Border: kẻ khung cho phạm vi</div>
+                <div>+ Phiếu Protection: Bảo vệ dữ liệu</div><br>
+            <li>HIỆU CHỈNH BẢNG TÍNH</li><br>
+                <ol start="1">
+                    <li>Xử lý ô, cột, hàng:</li><br>
+                    <div>- Chèn ô, cột, hàng:</div>
+                    <ul>
+                        <li>Chèn ô: Chọn lệnh Insert - Cells -> Xuất hiện hộp thoại:</li>
+                        <div>Shift Cell Right: Chèn một ô, đẩy các ô cùng hàng sang phải</div>
+                        <div>Shift Cell Down: Chèn một ô, đẩy các ô cùng cột xuống</div>
+                        <div>Entire row: Chèn một hàng vào vị trí hiện tại</div>
+                        <div>Entire Column: Chèn một cột vào vị trí hiện tại</div>
+                        <li>Chèn cột: Chọn lệnh Insert - Columns</li>
+                        <li>Chèn hàng: Chọn lệnh Insert - Rows</li>
+                        <div>Ngoài ra có thể kích phải chuột vào vị trí cần chèn rồi chọn lệnh tương ứng.</div><br>
+                    </ul>
+                    <div>- Xoá ô, cột, hàng:</div>
+                    <ul>
+                        <div>Chọn khối ô</div>
+                        <div>Chọn lệnh Edit - Delete -> Xuất hiện hộp thoại:</div>
+                        <div>Shift Cell Left: Xoá ô, kéo các ô cùng hàng sang trái</div>
+                        <div>Shift Cell Up: Xoá một ô, kéo các ô cùng cột ở phía dưới lên</div>
+                        <div>Entire row: Xoá một hàng tại vị trí hiện hành</div>
+                        <div>Entire Column: Xoá một cột tại vị trí hiện hành</div>
+                        <div>Ngoài ra có thể kích phải chuột vào vị trí cần chèn rồi chọn lệnh tương ứng.</div><br>
+                    </ul>
+                    <div>- Che dấu khối cột, khối dòng:</div><br>
+                <div>Chọn một trong các cách:</div>
+                <div>C1: Dùng chuột kéo trên vách ngăn tiêu đề cột /hàng cho đến khi 2 vách ngăn trùng nhau</div>
+                <div>C2: Chọn lệnh Format - Row/ Columns - Hide/Unhide (che dấu /hiển thị lại)</div>
+                <div>C3: Kích phải chuột trên tiêu đề cột/ tiêu đề hàng - Chọn lệnh Hide/Unhide</div><br>
+                <li class="bold">Xử lý bảng tính</li><br>
+                    <ul>
+                        <div>- Chèn thêm bảng tính:</div>
+                        <div>C1: Chọn lệnh Insert - WorkSheet</div>
+                        <div>C2: Kích phải chuột vào tên bảng tính hiện hành, chọn Insert ® Xuất hiện hộp thoại ® Chọn WorkSheet ® OK</div>
+                        <div>- Xoá bảng tính:</div>
+                        <div>C1: Chọn lệnh Edit - Delete Sheet</div>
+                        <div>C2: Kích phải chuột vào tên bảng tính hiện hành, chọn Delete.</div>
+                        <div>- Đổi tên Sheet:</div>
+                        <div>C1: Chọn lệnh Format - Sheet - Rename ® Gõ tên ® Enter</div>
+                        <div>C2: Kích phải chuột vào tên bảng tính cần sửa, chọn Rename ® Gõ lại tên ®</div>
+
+                    </ul>
+                </ol>
+        </ol><br>
+    </div><div align="center">End</div>
+    <hr>
+            
+    </body>
+</html>
